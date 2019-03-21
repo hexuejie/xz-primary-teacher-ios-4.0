@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AssistantsQuestionItemStudentNumberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_image_close" translatesAutoresizingMaskIntoConstraints="NO" id="wiA-ha-WiN">
+                        <rect key="frame" x="298" y="21.5" width="12" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="3Hq-UW-EQN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本题有10个学生有疑问" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIm-jp-cac">
+                        <rect key="frame" x="32" y="16" width="256" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wiA-ha-WiN" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4jP-Oa-ZRr"/>
+                <constraint firstItem="wiA-ha-WiN" firstAttribute="leading" secondItem="qIm-jp-cac" secondAttribute="trailing" constant="10" id="MUN-UR-NcE"/>
+                <constraint firstItem="qIm-jp-cac" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="QaM-lB-6W3"/>
+                <constraint firstItem="qIm-jp-cac" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="jZx-VX-jcp"/>
+                <constraint firstAttribute="trailing" secondItem="wiA-ha-WiN" secondAttribute="trailing" constant="10" id="zoP-2G-zdQ"/>
+            </constraints>
+            <connections>
+                <outlet property="arrowImgV" destination="wiA-ha-WiN" id="LTm-bS-8uu"/>
+                <outlet property="titleLabel" destination="qIm-jp-cac" id="oZk-qn-raP"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="content_image_close" width="12" height="8"/>
+    </resources>
+</document>

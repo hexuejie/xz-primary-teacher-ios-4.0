@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="ReleaseDeleteBookTipView">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="173.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realease_tipCombined Shape" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-Z0-iOC">
+                        <rect key="frame" x="115" y="39.5" width="124" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="NSG-Et-eri"/>
+                            <constraint firstAttribute="height" constant="95" id="gGf-Go-m1q"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URB-RS-tkX">
+                        <rect key="frame" x="132" y="55.5" width="90" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="NjE-e7-N0p"/>
+                            <constraint firstAttribute="height" constant="35" id="d2h-V5-IX6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="更换书本">
+                            <color key="titleColor" red="0.30192413926124573" green="0.30198186635971069" blue="0.30192047357559204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnG-aJ-thZ">
+                        <rect key="frame" x="131" y="89.5" width="92" height="1"/>
+                        <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cbL-u5-SWf"/>
+                            <constraint firstAttribute="width" constant="92" id="mF8-DA-l5J"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="227-Lh-0BB">
+                        <rect key="frame" x="132" y="90.5" width="90" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="KTF-ky-M1s"/>
+                            <constraint firstAttribute="height" constant="35" id="bB2-CS-U5a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" red="0.89170187711715698" green="0.26703459024429321" blue="0.31637278199195862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="URB-RS-tkX" firstAttribute="centerX" secondItem="mnG-aJ-thZ" secondAttribute="centerX" id="59K-wP-bYz"/>
+                    <constraint firstItem="227-Lh-0BB" firstAttribute="top" secondItem="URB-RS-tkX" secondAttribute="bottom" id="6KT-Qq-BWg"/>
+                    <constraint firstItem="NUY-Z0-iOC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fc2-H5-LMY"/>
+                    <constraint firstItem="227-Lh-0BB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JsA-Y4-XgZ"/>
+                    <constraint firstItem="URB-RS-tkX" firstAttribute="bottom" secondItem="mnG-aJ-thZ" secondAttribute="bottom" id="KDS-JD-BWb"/>
+                    <constraint firstItem="URB-RS-tkX" firstAttribute="top" secondItem="NUY-Z0-iOC" secondAttribute="top" constant="16" id="NAx-Wh-bMq"/>
+                    <constraint firstItem="URB-RS-tkX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NEr-TI-iGZ"/>
+                    <constraint firstItem="NUY-Z0-iOC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="izK-T0-2PL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeButton" destination="URB-RS-tkX" id="bDr-wr-QZI"/>
+                <outlet property="deleteButton" destination="227-Lh-0BB" id="b15-Fc-ZTo"/>
+            </connections>
+            <point key="canvasLocation" x="-270" y="166"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="realease_tipCombined Shape" width="140" height="111"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookHomeworkUnitRemindingHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt1-X5-tcd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_section_kwdd_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-NJ-rCP">
+                            <rect key="frame" x="10" y="16.5" width="11" height="11"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8P-p5-llH">
+                            <rect key="frame" x="30" y="11.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="t8P-p5-llH" firstAttribute="centerY" secondItem="Mt1-X5-tcd" secondAttribute="centerY" id="6c0-mA-0Ie"/>
+                        <constraint firstItem="t8P-p5-llH" firstAttribute="leading" secondItem="Dae-NJ-rCP" secondAttribute="trailing" constant="9" id="CMd-AI-9iP"/>
+                        <constraint firstItem="Dae-NJ-rCP" firstAttribute="leading" secondItem="Mt1-X5-tcd" secondAttribute="leading" constant="10" id="MAw-FA-krb"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t8P-p5-llH" secondAttribute="trailing" constant="10" id="l8p-A8-6XE"/>
+                        <constraint firstItem="Dae-NJ-rCP" firstAttribute="centerY" secondItem="Mt1-X5-tcd" secondAttribute="centerY" id="xmJ-9B-6IZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mt1-X5-tcd" secondAttribute="bottom" id="3Zv-dr-Vdk"/>
+                <constraint firstItem="Mt1-X5-tcd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KFd-r4-ALL"/>
+                <constraint firstItem="Mt1-X5-tcd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lDS-8f-6CV"/>
+                <constraint firstAttribute="trailing" secondItem="Mt1-X5-tcd" secondAttribute="trailing" id="uC4-QL-Poo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="Mt1-X5-tcd" id="sXg-Fd-bEg"/>
+                <outlet property="remindingLabel" destination="t8P-p5-llH" id="2xh-DF-iVV"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="homework_section_kwdd_icon" width="11" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeworkProblemsDetailUnitSwitchView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWc-8Y-VKY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击切换单元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-PM-80c">
+                            <rect key="frame" x="114" y="14" width="92" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3ow-as-zIf">
+                            <rect key="frame" x="297" y="17" width="8" height="12"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-hT-ppO">
+                            <rect key="frame" x="0.0" y="45" width="320" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Ute-bf-sbR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Je2-hT-ppO" secondAttribute="trailing" id="0nf-C1-Hnn"/>
+                        <constraint firstItem="Je2-hT-ppO" firstAttribute="leading" secondItem="PWc-8Y-VKY" secondAttribute="leading" id="2ov-0x-KrL"/>
+                        <constraint firstItem="Olm-PM-80c" firstAttribute="centerY" secondItem="PWc-8Y-VKY" secondAttribute="centerY" id="8VV-Rp-a72"/>
+                        <constraint firstItem="3ow-as-zIf" firstAttribute="centerY" secondItem="PWc-8Y-VKY" secondAttribute="centerY" id="R6N-0v-nGT"/>
+                        <constraint firstAttribute="bottom" secondItem="Je2-hT-ppO" secondAttribute="bottom" id="enM-nc-Q0S"/>
+                        <constraint firstAttribute="trailing" secondItem="3ow-as-zIf" secondAttribute="trailing" constant="15" id="ggq-Az-w3b"/>
+                        <constraint firstItem="Olm-PM-80c" firstAttribute="centerX" secondItem="PWc-8Y-VKY" secondAttribute="centerX" id="vTv-8N-EcE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCY-VM-cCp">
+                    <rect key="frame" x="0.0" y="46" width="320" height="4"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="BhS-s3-FOI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VCY-VM-cCp" secondAttribute="bottom" id="DkG-bc-yTA"/>
+                <constraint firstItem="PWc-8Y-VKY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UZv-0q-br5"/>
+                <constraint firstItem="VCY-VM-cCp" firstAttribute="top" secondItem="PWc-8Y-VKY" secondAttribute="bottom" id="X8h-hJ-rTS"/>
+                <constraint firstItem="VCY-VM-cCp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="prQ-h3-X5A"/>
+                <constraint firstItem="PWc-8Y-VKY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wXI-xQ-lF2"/>
+                <constraint firstAttribute="trailing" secondItem="PWc-8Y-VKY" secondAttribute="trailing" id="x1j-BW-ico"/>
+                <constraint firstAttribute="trailing" secondItem="VCY-VM-cCp" secondAttribute="trailing" id="yyc-7j-DAz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lineV" destination="Je2-hT-ppO" id="GAb-6N-8g7"/>
+                <outlet property="titleLabel" destination="Olm-PM-80c" id="Qwf-Cm-HQA"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_arrow_icon" width="8" height="12"/>
+    </resources>
+</document>

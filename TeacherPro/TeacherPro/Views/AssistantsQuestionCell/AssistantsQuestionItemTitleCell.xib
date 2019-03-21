@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AssistantsQuestionItemTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVG-xG-BOp">
+                        <rect key="frame" x="20" y="16" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imG-Oh-gel">
+                        <rect key="frame" x="68" y="17" width="53" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="无答案" image="unanswer_icon">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="有答案" image="answer_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JW-Aj-vWe">
+                        <rect key="frame" x="126" y="17" width="53" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="无解析" image="unanswer_icon">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="有解析" image="answer_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-YZ-D5R">
+                        <rect key="frame" x="184" y="17" width="52" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="无音频" image="unaudio_icon">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="有音频" image="audio_icon"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-Mc-EQR">
+                        <rect key="frame" x="0.0" y="49.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Qxh-Hu-gUp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PVG-xG-BOp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="3LS-Ch-ilL"/>
+                <constraint firstItem="5JW-Aj-vWe" firstAttribute="centerY" secondItem="imG-Oh-gel" secondAttribute="centerY" id="5cE-ny-MRq"/>
+                <constraint firstItem="Nan-YZ-D5R" firstAttribute="leading" secondItem="5JW-Aj-vWe" secondAttribute="trailing" constant="5" id="7f7-2C-SuH"/>
+                <constraint firstItem="imG-Oh-gel" firstAttribute="leading" secondItem="PVG-xG-BOp" secondAttribute="trailing" constant="10.5" id="A13-ny-Mbu"/>
+                <constraint firstAttribute="bottom" secondItem="Kow-Mc-EQR" secondAttribute="bottom" id="Ii9-F9-3ZS"/>
+                <constraint firstItem="Nan-YZ-D5R" firstAttribute="centerY" secondItem="5JW-Aj-vWe" secondAttribute="centerY" id="LKd-bp-Xw7"/>
+                <constraint firstItem="5JW-Aj-vWe" firstAttribute="leading" secondItem="imG-Oh-gel" secondAttribute="trailing" constant="5" id="OpO-Gk-nBi"/>
+                <constraint firstItem="PVG-xG-BOp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Q1y-Hq-l49"/>
+                <constraint firstItem="Kow-Mc-EQR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rga-B8-RO7"/>
+                <constraint firstItem="imG-Oh-gel" firstAttribute="centerY" secondItem="PVG-xG-BOp" secondAttribute="centerY" id="VLm-1s-djx"/>
+                <constraint firstAttribute="trailing" secondItem="Kow-Mc-EQR" secondAttribute="trailing" id="fQT-4w-MpH"/>
+            </constraints>
+            <connections>
+                <outlet property="answerBtn" destination="imG-Oh-gel" id="2D1-ae-hY6"/>
+                <outlet property="audioBtn" destination="Nan-YZ-D5R" id="bJ0-GW-LMf"/>
+                <outlet property="itemTitle" destination="PVG-xG-BOp" id="BcZ-Pj-ovb"/>
+                <outlet property="lineView" destination="Kow-Mc-EQR" id="Q6a-ex-zSQ"/>
+                <outlet property="parseBtn" destination="5JW-Aj-vWe" id="S4Z-La-W87"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="answer_icon" width="10" height="10"/>
+        <image name="audio_icon" width="9" height="12"/>
+        <image name="unanswer_icon" width="10" height="10"/>
+        <image name="unaudio_icon" width="9" height="12"/>
+    </resources>
+</document>

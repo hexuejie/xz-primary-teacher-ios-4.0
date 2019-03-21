@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChooseParseMyEditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaT-Re-D4A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57u-g9-y91">
+                                <rect key="frame" x="144" y="9.5" width="74" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="编辑" image="new_parse_edit_icon">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1DR-S1-0T5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8u-zV-QRo">
+                                <rect key="frame" x="228" y="9.5" width="74" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4wV-vb-797"/>
+                                    <constraint firstAttribute="width" constant="74" id="SZI-qJ-0BW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="删除" image="new_parse_del_icon">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4GR-6V-aiN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_dotted_line" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-mD-1xm">
+                                <rect key="frame" x="0.0" y="43.5" width="320" height="0.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="lrR-hz-BwY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8u-zV-QRo" firstAttribute="leading" secondItem="57u-g9-y91" secondAttribute="trailing" constant="10" id="RvE-Wa-3R9"/>
+                            <constraint firstItem="57u-g9-y91" firstAttribute="height" secondItem="r8u-zV-QRo" secondAttribute="height" id="TM2-Qp-SBM"/>
+                            <constraint firstItem="57u-g9-y91" firstAttribute="width" secondItem="r8u-zV-QRo" secondAttribute="width" id="chw-2m-eiw"/>
+                            <constraint firstItem="r8u-zV-QRo" firstAttribute="centerY" secondItem="FaT-Re-D4A" secondAttribute="centerY" id="nW0-LI-fdK"/>
+                            <constraint firstAttribute="trailing" secondItem="r8u-zV-QRo" secondAttribute="trailing" constant="18" id="ph9-YB-1Dh"/>
+                            <constraint firstItem="57u-g9-y91" firstAttribute="top" secondItem="r8u-zV-QRo" secondAttribute="top" id="thP-JQ-UEN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FaT-Re-D4A" secondAttribute="bottom" constant="-0.5" id="AGW-Q1-BG4"/>
+                    <constraint firstAttribute="trailing" secondItem="FaT-Re-D4A" secondAttribute="trailing" id="X6x-Ve-NEX"/>
+                    <constraint firstItem="FaT-Re-D4A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iIs-YA-gu6"/>
+                    <constraint firstItem="FaT-Re-D4A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ooE-TX-1TR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O2k-mD-1xm" secondAttribute="bottom" id="jzO-vr-jxe"/>
+                <constraint firstItem="O2k-mD-1xm" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="k4n-dI-de9"/>
+                <constraint firstAttribute="trailing" secondItem="O2k-mD-1xm" secondAttribute="trailing" id="lp4-oU-IW2"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="FaT-Re-D4A" id="Bz0-vQ-Q9o"/>
+                <outlet property="deleteBtn" destination="r8u-zV-QRo" id="nT4-dM-wBD"/>
+                <outlet property="editBtn" destination="57u-g9-y91" id="PRq-jU-Phl"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="159"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="new_dotted_line" width="1" height="1"/>
+        <image name="new_parse_del_icon" width="14" height="14"/>
+        <image name="new_parse_edit_icon" width="14" height="14"/>
+    </resources>
+</document>

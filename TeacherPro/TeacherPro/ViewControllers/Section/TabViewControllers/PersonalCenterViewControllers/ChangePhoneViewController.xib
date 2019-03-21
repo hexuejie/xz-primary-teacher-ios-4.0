@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePhoneViewController">
+            <connections>
+                <outlet property="nextBtn" destination="lDR-78-QZV" id="s5H-lz-Aie"/>
+                <outlet property="oldPhone" destination="JwS-Zz-T7U" id="vLs-bd-mJp"/>
+                <outlet property="smsBgView" destination="w90-bu-06g" id="dzA-oP-hgL"/>
+                <outlet property="smsButton" destination="EuJ-Mz-cqx" id="uHg-5O-BLF"/>
+                <outlet property="smscodeInput" destination="qPV-ze-UMl" id="78s-kO-MLy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更换手机后,下次登录可使用新手机号登录。当前手机号：" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryt-IB-1dx">
+                    <rect key="frame" x="40" y="20" width="295" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwS-Zz-T7U">
+                    <rect key="frame" x="158.5" y="60" width="58.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w90-bu-06g" userLabel="sms view">
+                    <rect key="frame" x="40" y="124" width="295" height="29"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qPV-ze-UMl">
+                            <rect key="frame" x="60" y="4" width="155" height="21"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.42745098040000001" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuJ-Mz-cqx">
+                            <rect key="frame" x="215" y="0.0" width="80" height="29"/>
+                            <color key="backgroundColor" red="0.20177775621414185" green="0.66791599988937378" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Ktx-OF-Anx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="获取验证码"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="smsAction:" destination="-1" eventType="touchUpInside" id="bMV-PF-91z"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qPV-ze-UMl" secondAttribute="trailing" constant="80" id="9BO-mB-s0o"/>
+                        <constraint firstAttribute="trailing" secondItem="EuJ-Mz-cqx" secondAttribute="trailing" id="9ba-PO-Qsz"/>
+                        <constraint firstItem="qPV-ze-UMl" firstAttribute="leading" secondItem="w90-bu-06g" secondAttribute="leading" constant="60" id="BgY-6j-ysK"/>
+                        <constraint firstItem="EuJ-Mz-cqx" firstAttribute="top" secondItem="w90-bu-06g" secondAttribute="top" id="JKc-jm-PFq"/>
+                        <constraint firstItem="qPV-ze-UMl" firstAttribute="top" secondItem="w90-bu-06g" secondAttribute="top" constant="4" id="Qvv-pN-0gv"/>
+                        <constraint firstItem="qPV-ze-UMl" firstAttribute="centerY" secondItem="w90-bu-06g" secondAttribute="centerY" id="U98-Cj-HIR"/>
+                        <constraint firstItem="EuJ-Mz-cqx" firstAttribute="centerY" secondItem="qPV-ze-UMl" secondAttribute="centerY" id="WPR-qg-DqP"/>
+                        <constraint firstAttribute="bottom" secondItem="EuJ-Mz-cqx" secondAttribute="bottom" id="eXf-0U-aF0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.87058823529999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.59999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDR-78-QZV">
+                    <rect key="frame" x="40" y="178" width="295" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <size key="titleShadowOffset" width="0.0" height="2"/>
+                    <state key="normal" title="下一步" backgroundImage="btn_normal_bg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="focused">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="M8h-X4-ONg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lDR-78-QZV" firstAttribute="leading" secondItem="w90-bu-06g" secondAttribute="leading" id="GKo-xN-3Fe"/>
+                <constraint firstItem="Ryt-IB-1dx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gpv-PR-9dx"/>
+                <constraint firstItem="lDR-78-QZV" firstAttribute="top" secondItem="w90-bu-06g" secondAttribute="bottom" constant="25" id="Jsp-sk-v1r"/>
+                <constraint firstAttribute="trailing" secondItem="Ryt-IB-1dx" secondAttribute="trailing" constant="40" id="KwQ-iW-GLy"/>
+                <constraint firstItem="JwS-Zz-T7U" firstAttribute="top" secondItem="Ryt-IB-1dx" secondAttribute="bottom" constant="4" id="SOW-Il-n9t"/>
+                <constraint firstItem="Ryt-IB-1dx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ZnK-No-EJQ"/>
+                <constraint firstItem="w90-bu-06g" firstAttribute="top" secondItem="JwS-Zz-T7U" secondAttribute="bottom" constant="43" id="hhz-ES-kRj"/>
+                <constraint firstItem="w90-bu-06g" firstAttribute="leading" secondItem="Ryt-IB-1dx" secondAttribute="leading" id="pSh-Un-pDH"/>
+                <constraint firstItem="w90-bu-06g" firstAttribute="trailing" secondItem="Ryt-IB-1dx" secondAttribute="trailing" id="toV-Hk-lcT"/>
+                <constraint firstItem="Ryt-IB-1dx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="vp9-c2-KK4"/>
+                <constraint firstItem="JwS-Zz-T7U" firstAttribute="centerX" secondItem="Ryt-IB-1dx" secondAttribute="centerX" id="wbH-gf-oQS"/>
+                <constraint firstItem="lDR-78-QZV" firstAttribute="trailing" secondItem="w90-bu-06g" secondAttribute="trailing" id="wpq-pD-fd5"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_normal_bg" width="355" height="64"/>
+    </resources>
+</document>

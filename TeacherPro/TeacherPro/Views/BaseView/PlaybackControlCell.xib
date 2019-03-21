@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlaybackControlCell">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="110" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaN-JY-xpa">
+                        <rect key="frame" x="0.0" y="0.0" width="297" height="43.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFx-1A-g5U">
+                                <rect key="frame" x="15" y="0.0" width="24" height="43.5"/>
+                                <state key="normal" image="homework_voice_normal"/>
+                                <state key="selected" image="homework_voice_selected"/>
+                                <connections>
+                                    <action selector="playButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3KT-ib-gLI"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-1G-lox">
+                                <rect key="frame" x="44" y="18" width="195" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="SZl-XR-D5v"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.32601523399353027" green="0.71879428625106812" blue="0.99906235933303833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiX-Ad-WZE">
+                                <rect key="frame" x="282" y="22" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.70190054178237915" green="0.70200073719024658" blue="0.70186895132064819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIN-jZ-xkR">
+                                <rect key="frame" x="0.0" y="43.5" width="297" height="0.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="mXF-7c-km6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZG4-1G-lox" firstAttribute="centerY" secondItem="pFx-1A-g5U" secondAttribute="centerY" id="0Ps-d6-2vB"/>
+                            <constraint firstItem="pFx-1A-g5U" firstAttribute="leading" secondItem="FaN-JY-xpa" secondAttribute="leading" constant="15" id="7M2-O4-crP"/>
+                            <constraint firstAttribute="trailing" secondItem="ZG4-1G-lox" secondAttribute="trailing" constant="58" id="DH5-R8-gH3"/>
+                            <constraint firstItem="pFx-1A-g5U" firstAttribute="centerY" secondItem="FaN-JY-xpa" secondAttribute="centerY" id="I4r-2y-4Mj"/>
+                            <constraint firstItem="pFx-1A-g5U" firstAttribute="top" secondItem="FaN-JY-xpa" secondAttribute="top" id="Ncl-i7-eC4"/>
+                            <constraint firstAttribute="bottom" secondItem="pFx-1A-g5U" secondAttribute="bottom" id="TRP-t2-63c"/>
+                            <constraint firstItem="TiX-Ad-WZE" firstAttribute="centerY" secondItem="FaN-JY-xpa" secondAttribute="centerY" id="UJi-hi-lS1"/>
+                            <constraint firstItem="ZG4-1G-lox" firstAttribute="leading" secondItem="pFx-1A-g5U" secondAttribute="trailing" constant="5" id="XPT-oR-cL8"/>
+                            <constraint firstItem="zIN-jZ-xkR" firstAttribute="leading" secondItem="FaN-JY-xpa" secondAttribute="leading" id="e2k-fQ-QGS"/>
+                            <constraint firstAttribute="trailing" secondItem="TiX-Ad-WZE" secondAttribute="trailing" constant="15" id="ubv-5y-JKr"/>
+                            <constraint firstAttribute="trailing" secondItem="zIN-jZ-xkR" secondAttribute="trailing" id="ufr-j3-kDC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="FaN-JY-xpa" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="5rV-4H-Oiy"/>
+                <constraint firstAttribute="bottom" secondItem="FaN-JY-xpa" secondAttribute="bottom" constant="0.5" id="pbK-Ht-cfq"/>
+                <constraint firstAttribute="bottom" secondItem="zIN-jZ-xkR" secondAttribute="bottom" id="snw-4b-4tl"/>
+                <constraint firstItem="FaN-JY-xpa" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="wFu-bL-JfP"/>
+                <constraint firstAttribute="trailing" secondItem="FaN-JY-xpa" secondAttribute="trailing" id="xOb-PX-ZJK"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLineView" destination="zIN-jZ-xkR" id="sTY-Nr-fvg"/>
+                <outlet property="fatherView" destination="FaN-JY-xpa" id="eAX-Ri-epK"/>
+                <outlet property="playButton" destination="pFx-1A-g5U" id="Pb2-zl-C3m"/>
+                <outlet property="progressView" destination="ZG4-1G-lox" id="LQp-P2-sXF"/>
+                <outlet property="timeLabel" destination="TiX-Ad-WZE" id="QP7-N7-xIz"/>
+            </connections>
+            <point key="canvasLocation" x="-258" y="137"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homework_voice_normal" width="24" height="24"/>
+        <image name="homework_voice_selected" width="24" height="24"/>
+    </resources>
+</document>

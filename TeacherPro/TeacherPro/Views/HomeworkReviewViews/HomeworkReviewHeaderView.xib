@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeworkReviewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chx-fT-xaQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_section_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dNR-sv-H0q">
+                            <rect key="frame" x="53.5" y="9" width="13" height="13"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-Cj-UwO">
+                            <rect key="frame" x="60" y="22" width="0.5" height="14"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="46a-tk-oKf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NHB-Cj-UwO" firstAttribute="top" secondItem="dNR-sv-H0q" secondAttribute="bottom" id="ILp-Pw-ASa"/>
+                        <constraint firstItem="NHB-Cj-UwO" firstAttribute="leading" secondItem="chx-fT-xaQ" secondAttribute="leading" constant="60" id="RXv-v5-AmJ"/>
+                        <constraint firstItem="NHB-Cj-UwO" firstAttribute="centerX" secondItem="dNR-sv-H0q" secondAttribute="centerX" id="T2k-gj-oLU"/>
+                        <constraint firstItem="dNR-sv-H0q" firstAttribute="top" secondItem="chx-fT-xaQ" secondAttribute="top" constant="9" id="ofo-aV-R6F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="chx-fT-xaQ" secondAttribute="bottom" id="KZK-2a-Dbb"/>
+                <constraint firstAttribute="trailing" secondItem="chx-fT-xaQ" secondAttribute="trailing" id="jkd-df-ZwA"/>
+                <constraint firstItem="chx-fT-xaQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nc1-XT-KBo"/>
+                <constraint firstAttribute="bottom" secondItem="NHB-Cj-UwO" secondAttribute="bottom" id="rSV-pl-dZE"/>
+                <constraint firstItem="chx-fT-xaQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rWa-SO-J7Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lineView" destination="NHB-Cj-UwO" id="oHU-AX-32P"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="review_section_icon" width="13" height="13"/>
+    </resources>
+</document>

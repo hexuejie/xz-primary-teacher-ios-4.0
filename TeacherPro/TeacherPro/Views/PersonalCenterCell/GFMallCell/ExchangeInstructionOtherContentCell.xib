@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ExchangeInstructionOtherContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift_point" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-ju-L6Q">
+                        <rect key="frame" x="15" y="10" width="8" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="WXj-SC-nAw"/>
+                            <constraint firstAttribute="height" constant="8" id="dSf-81-4yK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnD-7u-e6m">
+                        <rect key="frame" x="28" y="5" width="275" height="62.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wnD-7u-e6m" firstAttribute="leading" secondItem="nUH-ju-L6Q" secondAttribute="trailing" constant="5" id="0ZH-v1-L2T"/>
+                    <constraint firstItem="nUH-ju-L6Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Iw2-RG-FkV"/>
+                    <constraint firstAttribute="bottom" secondItem="wnD-7u-e6m" secondAttribute="bottom" constant="5" id="LzG-nJ-k98"/>
+                    <constraint firstItem="wnD-7u-e6m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YYu-2x-hb3"/>
+                    <constraint firstItem="nUH-ju-L6Q" firstAttribute="top" secondItem="wnD-7u-e6m" secondAttribute="top" constant="5" id="ti8-MJ-37q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wnD-7u-e6m" secondAttribute="trailing" constant="15" id="ang-Hg-Frw"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="wnD-7u-e6m" id="UwU-Di-aPY"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="142.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gift_point" width="6" height="6"/>
+    </resources>
+</document>

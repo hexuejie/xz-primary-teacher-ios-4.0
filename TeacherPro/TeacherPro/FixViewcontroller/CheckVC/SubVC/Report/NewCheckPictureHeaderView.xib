@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="NewCheckPictureHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckGroupBottom" translatesAutoresizingMaskIntoConstraints="NO" id="3LJ-2y-C0C">
+                        <rect key="frame" x="0.0" y="0.0" width="492" height="190"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="O8I-jX-OFI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二年级三班" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB1-4N-Qj3">
+                        <rect key="frame" x="202.5" y="31" width="87" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC9-fb-OPG">
+                        <rect key="frame" x="16" y="16.5" width="24" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="DyT-Ak-XIc"/>
+                        </constraints>
+                        <state key="normal" image="back_white"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckGroupA" translatesAutoresizingMaskIntoConstraints="NO" id="gjW-6v-opB">
+                        <rect key="frame" x="98.5" y="75" width="295" height="153"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-93-h5O">
+                        <rect key="frame" x="452" y="16.5" width="24" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="pcI-fk-Alx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" image="report_detial_help">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4Dp-93-h5O" secondAttribute="trailing" constant="16" id="1FF-Oy-gFx"/>
+                    <constraint firstItem="dB1-4N-Qj3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="4zZ-UI-gwf"/>
+                    <constraint firstItem="4Dp-93-h5O" firstAttribute="centerY" secondItem="dB1-4N-Qj3" secondAttribute="centerY" id="Lve-jx-j0d"/>
+                    <constraint firstItem="gjW-6v-opB" firstAttribute="bottom" secondItem="3LJ-2y-C0C" secondAttribute="bottom" constant="38" id="TgL-bW-vdq"/>
+                    <constraint firstAttribute="trailing" secondItem="3LJ-2y-C0C" secondAttribute="trailing" id="blY-nf-Ult"/>
+                    <constraint firstItem="dB1-4N-Qj3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oUR-pk-4fk"/>
+                    <constraint firstItem="3LJ-2y-C0C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sAB-fw-MPw"/>
+                    <constraint firstItem="3LJ-2y-C0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tVd-We-Ybk"/>
+                    <constraint firstItem="4Dp-93-h5O" firstAttribute="centerY" secondItem="dB1-4N-Qj3" secondAttribute="centerY" id="vDd-F6-Wej"/>
+                    <constraint firstItem="gjW-6v-opB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vHB-l2-MZs"/>
+                    <constraint firstItem="yC9-fb-OPG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vdC-dx-By7"/>
+                    <constraint firstItem="dB1-4N-Qj3" firstAttribute="centerY" secondItem="yC9-fb-OPG" secondAttribute="centerY" id="xMD-h8-qYl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backButton" destination="yC9-fb-OPG" id="LqV-NQ-meP"/>
+                <outlet property="helpButton" destination="4Dp-93-h5O" id="70a-5e-IPO"/>
+                <outlet property="rangImageView" destination="gjW-6v-opB" id="bcp-rQ-dhD"/>
+                <outlet property="titleLabel" destination="dB1-4N-Qj3" id="U5I-zo-Xmg"/>
+            </connections>
+            <point key="canvasLocation" x="-1262" y="90"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CheckGroupA" width="295" height="153"/>
+        <image name="CheckGroupBottom" width="375" height="182"/>
+        <image name="back_white" width="24" height="24"/>
+        <image name="report_detial_help" width="24" height="24"/>
+    </resources>
+</document>

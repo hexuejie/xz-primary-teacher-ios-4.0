@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookHomeworkItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-kQ-EKz">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="85"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ba-gM-aiO">
+                        <rect key="frame" x="14" y="30" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="P3J-U7-7XT"/>
+                            <constraint firstAttribute="height" constant="24" id="gpE-XC-VZG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URV-BK-k17">
+                        <rect key="frame" x="48" y="22.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-gA-Zp2">
+                        <rect key="frame" x="0.0" y="41.5" width="160" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="HWi-q9-Lq4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUH-Ng-yNK">
+                        <rect key="frame" x="48" y="44.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_item_selected" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-3o-Ubl">
+                        <rect key="frame" x="130" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kDq-fs-ujg"/>
+                            <constraint firstAttribute="width" constant="20" id="nH9-pm-LJF"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtM-hP-AhW" userLabel="bottomView">
+                        <rect key="frame" x="0.0" y="84" width="160" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="lqN-Dp-oiz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaO-4b-RPT" userLabel="centerView">
+                        <rect key="frame" x="159.5" y="5" width="0.5" height="75"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="Kra-Mo-8DW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ASz-3o-Ubl" secondAttribute="trailing" constant="10" id="1rS-Is-eYL"/>
+                <constraint firstItem="URV-BK-k17" firstAttribute="leading" secondItem="4ba-gM-aiO" secondAttribute="trailing" constant="10" id="3xZ-10-pqi"/>
+                <constraint firstItem="4ba-gM-aiO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="4AL-fe-D8l"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LUH-Ng-yNK" secondAttribute="trailing" constant="10" id="57m-Sw-Qf9"/>
+                <constraint firstAttribute="bottom" secondItem="0sf-kQ-EKz" secondAttribute="bottom" id="7zc-Vd-i2G"/>
+                <constraint firstItem="0sf-kQ-EKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="C9E-m2-h5v"/>
+                <constraint firstAttribute="trailing" secondItem="0sf-kQ-EKz" secondAttribute="trailing" id="Cpl-KK-1FX"/>
+                <constraint firstItem="LUH-Ng-yNK" firstAttribute="top" secondItem="HAh-gA-Zp2" secondAttribute="bottom" constant="2" id="HLU-If-1Ex"/>
+                <constraint firstItem="HAh-gA-Zp2" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="IQ4-oV-2IG"/>
+                <constraint firstAttribute="bottom" secondItem="XaO-4b-RPT" secondAttribute="bottom" constant="5" id="MAD-E7-uBG"/>
+                <constraint firstItem="vtM-hP-AhW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PXV-25-uNg"/>
+                <constraint firstItem="0sf-kQ-EKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RVR-bB-rX4"/>
+                <constraint firstAttribute="trailing" secondItem="vtM-hP-AhW" secondAttribute="trailing" id="TQB-MU-zkS"/>
+                <constraint firstItem="ASz-3o-Ubl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XUV-Pl-FbE"/>
+                <constraint firstItem="ASz-3o-Ubl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="URV-BK-k17" secondAttribute="trailing" constant="10" id="ZF9-wh-2oa"/>
+                <constraint firstItem="LUH-Ng-yNK" firstAttribute="leading" secondItem="URV-BK-k17" secondAttribute="leading" id="ZK6-6L-ieo"/>
+                <constraint firstAttribute="trailing" secondItem="HAh-gA-Zp2" secondAttribute="trailing" id="ayB-Li-ySI"/>
+                <constraint firstItem="HAh-gA-Zp2" firstAttribute="top" secondItem="URV-BK-k17" secondAttribute="bottom" constant="2" id="fak-hT-Hxu"/>
+                <constraint firstItem="XaO-4b-RPT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="jDs-3M-ouS"/>
+                <constraint firstAttribute="trailing" secondItem="XaO-4b-RPT" secondAttribute="trailing" id="k9J-EB-OT8"/>
+                <constraint firstItem="HAh-gA-Zp2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oxD-3a-bCr"/>
+                <constraint firstItem="4ba-gM-aiO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="yQl-ro-29j"/>
+                <constraint firstAttribute="bottom" secondItem="vtM-hP-AhW" secondAttribute="bottom" id="ykA-QO-smQ"/>
+            </constraints>
+            <size key="customSize" width="158" height="85"/>
+            <connections>
+                <outlet property="bottomLine" destination="vtM-hP-AhW" id="9Y4-XD-eTb"/>
+                <outlet property="centerLine" destination="XaO-4b-RPT" id="guD-Fn-Ozy"/>
+                <outlet property="chooseImgV" destination="ASz-3o-Ubl" id="q8l-s2-4G5"/>
+                <outlet property="detailLabel" destination="LUH-Ng-yNK" id="mCt-3V-hbF"/>
+                <outlet property="iconImgV" destination="4ba-gM-aiO" id="wlb-yJ-eGv"/>
+                <outlet property="nameLabel" destination="URV-BK-k17" id="GP0-HO-hlp"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="106.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homework_item_selected" width="20" height="25"/>
+    </resources>
+</document>

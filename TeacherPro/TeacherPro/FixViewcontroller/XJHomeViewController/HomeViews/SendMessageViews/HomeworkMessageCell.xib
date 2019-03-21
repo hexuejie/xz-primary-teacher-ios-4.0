@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="HomeworkMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-Qi-Q5Z">
+                        <rect key="frame" x="22" y="13" width="53" height="53"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="lrM-1K-is9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="作业名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28E-U0-1rN">
+                        <rect key="frame" x="83" y="21" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="10秒前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5U-tQ-ttK">
+                        <rect key="frame" x="304" y="23" width="35" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="作业详细" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59U-cz-BkM">
+                        <rect key="frame" x="83" y="43" width="256" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gda-DW-gdf">
+                        <rect key="frame" x="257" y="65.5" width="68" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="yQd-by-KNg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="查看作业概况">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="detailAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NXz-LW-n28"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_detail_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-qQ-cZ4">
+                        <rect key="frame" x="333" y="74" width="6" height="9"/>
+                    </imageView>
+                </subviews>
+                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="28E-U0-1rN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="0Uz-aJ-lAi"/>
+                    <constraint firstItem="mlG-Qi-Q5Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="3y1-Nv-Dqu"/>
+                    <constraint firstItem="mlG-Qi-Q5Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="8oU-Sf-ngH"/>
+                    <constraint firstItem="Y5U-tQ-ttK" firstAttribute="centerY" secondItem="28E-U0-1rN" secondAttribute="centerY" id="Opu-5p-aly"/>
+                    <constraint firstItem="gda-DW-gdf" firstAttribute="top" secondItem="59U-cz-BkM" secondAttribute="bottom" constant="8" id="YUm-uQ-hma"/>
+                    <constraint firstItem="xBp-qQ-cZ4" firstAttribute="centerY" secondItem="gda-DW-gdf" secondAttribute="centerY" id="dW4-Wb-mHZ"/>
+                    <constraint firstItem="xBp-qQ-cZ4" firstAttribute="trailing" secondItem="Y5U-tQ-ttK" secondAttribute="trailing" id="fOA-HK-bgV"/>
+                    <constraint firstItem="59U-cz-BkM" firstAttribute="leading" secondItem="28E-U0-1rN" secondAttribute="leading" id="gJT-O4-bC7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gda-DW-gdf" secondAttribute="bottom" constant="-0.5" id="hJ3-UD-HxE"/>
+                    <constraint firstItem="28E-U0-1rN" firstAttribute="leading" secondItem="mlG-Qi-Q5Z" secondAttribute="trailing" constant="8" id="itX-7g-uaD"/>
+                    <constraint firstItem="59U-cz-BkM" firstAttribute="top" secondItem="28E-U0-1rN" secondAttribute="bottom" constant="5" id="z3t-ak-WBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="59U-cz-BkM" secondAttribute="trailing" constant="20" id="3Gg-JV-fiw"/>
+                <constraint firstAttribute="trailing" secondItem="gda-DW-gdf" secondAttribute="trailing" constant="34" id="QA7-uX-gMA"/>
+                <constraint firstAttribute="trailing" secondItem="Y5U-tQ-ttK" secondAttribute="trailing" constant="20" id="ikw-Ga-1ZU"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="59U-cz-BkM" id="Uin-pd-LLh"/>
+                <outlet property="dateLabel" destination="Y5U-tQ-ttK" id="WQB-Nu-nfu"/>
+                <outlet property="detailBtn" destination="gda-DW-gdf" id="SrD-fn-Q5d"/>
+                <outlet property="name" destination="28E-U0-1rN" id="aqe-z7-IpD"/>
+            </connections>
+            <point key="canvasLocation" x="51.5" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homework_detail_arrow" width="6" height="9"/>
+        <image name="message_user_icon" width="53" height="53"/>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="HomeworkUnitDetailVoiceCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKf-af-XEM">
+                        <rect key="frame" x="26" y="11" width="203" height="12.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwi-FD-IsS">
+                        <rect key="frame" x="237" y="11" width="60" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="RoT-xX-t03"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view tag="120" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OON-lq-RFn">
+                        <rect key="frame" x="26" y="27.5" width="271" height="34"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbY-5A-Wa7">
+                                <rect key="frame" x="10" y="2.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="25m-c5-uWk"/>
+                                    <constraint firstAttribute="width" constant="30" id="pmr-jv-DFL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="homework_voice_normal"/>
+                                <state key="selected" image="homework_voice_selected"/>
+                                <connections>
+                                    <action selector="playButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J1g-H1-3sg"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-aP-hXm">
+                                <rect key="frame" x="50" y="15.5" width="206" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="fbh-2p-sVH"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.1803921568627451" green="0.54117647058823526" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfa-xk-o5V">
+                                <rect key="frame" x="219.5" y="19.5" width="36.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="7WI-qg-qRD"/>
+                            <constraint firstItem="Jfa-xk-o5V" firstAttribute="top" secondItem="VSa-aP-hXm" secondAttribute="bottom" id="Acx-Kb-Fem"/>
+                            <constraint firstItem="Jfa-xk-o5V" firstAttribute="trailing" secondItem="VSa-aP-hXm" secondAttribute="trailing" id="Ave-og-RBN"/>
+                            <constraint firstItem="VSa-aP-hXm" firstAttribute="centerY" secondItem="bbY-5A-Wa7" secondAttribute="centerY" id="JzP-Kl-nCk"/>
+                            <constraint firstItem="bbY-5A-Wa7" firstAttribute="centerY" secondItem="OON-lq-RFn" secondAttribute="centerY" id="Wss-Uk-A9e"/>
+                            <constraint firstItem="VSa-aP-hXm" firstAttribute="leading" secondItem="bbY-5A-Wa7" secondAttribute="trailing" constant="10" id="ar0-Dw-R9v"/>
+                            <constraint firstItem="bbY-5A-Wa7" firstAttribute="leading" secondItem="OON-lq-RFn" secondAttribute="leading" constant="10" id="pUU-NX-Y1v"/>
+                            <constraint firstAttribute="trailing" secondItem="VSa-aP-hXm" secondAttribute="trailing" constant="15" id="yng-rp-2eT"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wop-8g-Dcn">
+                        <rect key="frame" x="0.0" y="71.5" width="323" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lLq-HY-KwD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lwi-FD-IsS" firstAttribute="top" secondItem="SKf-af-XEM" secondAttribute="top" id="5v3-TC-gNR"/>
+                    <constraint firstItem="SKf-af-XEM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9kJ-uG-AvJ"/>
+                    <constraint firstItem="OON-lq-RFn" firstAttribute="top" secondItem="SKf-af-XEM" secondAttribute="bottom" constant="4" id="Hbz-J6-lBD"/>
+                    <constraint firstItem="OON-lq-RFn" firstAttribute="leading" secondItem="SKf-af-XEM" secondAttribute="leading" id="WXi-hj-mdb"/>
+                    <constraint firstItem="lwi-FD-IsS" firstAttribute="leading" secondItem="SKf-af-XEM" secondAttribute="trailing" constant="8" id="dVP-6G-pFR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lwi-FD-IsS" secondAttribute="trailing" constant="10" id="geq-Mv-Sqc"/>
+                    <constraint firstItem="OON-lq-RFn" firstAttribute="trailing" secondItem="lwi-FD-IsS" secondAttribute="trailing" id="gzP-Ry-0sz"/>
+                    <constraint firstItem="wop-8g-Dcn" firstAttribute="top" secondItem="OON-lq-RFn" secondAttribute="bottom" constant="10" id="qkl-X3-aVK"/>
+                    <constraint firstItem="SKf-af-XEM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="sEp-Gf-enN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wop-8g-Dcn" secondAttribute="bottom" constant="-8.5" id="sbI-vb-aaW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wop-8g-Dcn" secondAttribute="trailing" id="RMU-d9-ErN"/>
+                <constraint firstItem="wop-8g-Dcn" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="eu2-k2-Jmu"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLineView" destination="wop-8g-Dcn" id="Fpi-Cc-V9K"/>
+                <outlet property="fatherView" destination="OON-lq-RFn" id="lWl-zO-LB2"/>
+                <outlet property="playBtn" destination="bbY-5A-Wa7" id="xIH-GL-xbL"/>
+                <outlet property="progress" destination="VSa-aP-hXm" id="egb-Ex-tlU"/>
+                <outlet property="scoreLabel" destination="lwi-FD-IsS" id="UXS-Du-fcF"/>
+                <outlet property="timerLabel" destination="Jfa-xk-o5V" id="Dhg-Fx-vyj"/>
+                <outlet property="titleLabel" destination="SKf-af-XEM" id="SQx-PP-EHb"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="108.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homework_voice_normal" width="25" height="25"/>
+        <image name="homework_voice_selected" width="25" height="25"/>
+    </resources>
+</document>

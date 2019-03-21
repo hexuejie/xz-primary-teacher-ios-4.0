@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WriteMessageRecipientCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-Ie-bpc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_recipient" translatesAutoresizingMaskIntoConstraints="NO" id="02A-oP-GUY" customClass="message_recipient">
+                                <rect key="frame" x="15" y="14" width="16" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="jlh-1O-Jp6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收件人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT1-YG-mb9">
+                                <rect key="frame" x="41" y="14" width="53.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53.5" id="vpt-jW-6dd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请您选择收件人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-UJ-GcP">
+                                <rect key="frame" x="100" y="14" width="180" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFF-5T-EMW">
+                                <rect key="frame" x="288" y="13" width="22" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="Ij1-S6-p99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title=" " image="add_recipient"/>
+                                <connections>
+                                    <action selector="addRecipientAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OyA-0I-fGz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ht-UJ-GcP" firstAttribute="centerY" secondItem="eT1-YG-mb9" secondAttribute="centerY" id="Bl4-IY-D9k"/>
+                            <constraint firstItem="eT1-YG-mb9" firstAttribute="leading" secondItem="02A-oP-GUY" secondAttribute="trailing" constant="10" id="SlL-Wo-lJO"/>
+                            <constraint firstItem="02A-oP-GUY" firstAttribute="centerY" secondItem="mVX-Ie-bpc" secondAttribute="centerY" id="cjl-Vz-XTL"/>
+                            <constraint firstAttribute="trailing" secondItem="wFF-5T-EMW" secondAttribute="trailing" constant="10" id="fIo-M0-i6f"/>
+                            <constraint firstItem="eT1-YG-mb9" firstAttribute="centerY" secondItem="02A-oP-GUY" secondAttribute="centerY" id="jkn-HA-hLF"/>
+                            <constraint firstItem="02A-oP-GUY" firstAttribute="leading" secondItem="mVX-Ie-bpc" secondAttribute="leading" constant="15" id="qq6-dm-MEy"/>
+                            <constraint firstItem="wFF-5T-EMW" firstAttribute="leading" secondItem="9ht-UJ-GcP" secondAttribute="trailing" constant="8" id="xy1-Jy-i2J"/>
+                            <constraint firstItem="wFF-5T-EMW" firstAttribute="centerY" secondItem="mVX-Ie-bpc" secondAttribute="centerY" id="yvk-pk-udI"/>
+                            <constraint firstItem="9ht-UJ-GcP" firstAttribute="leading" secondItem="eT1-YG-mb9" secondAttribute="trailing" constant="5.5" id="zTI-QL-W8j"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="mVX-Ie-bpc" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="HGP-gK-tJJ"/>
+                <constraint firstItem="mVX-Ie-bpc" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="V2n-p3-5Og"/>
+                <constraint firstAttribute="bottom" secondItem="mVX-Ie-bpc" secondAttribute="bottom" id="iOi-4d-JKa"/>
+                <constraint firstAttribute="trailing" secondItem="mVX-Ie-bpc" secondAttribute="trailing" id="q6D-5L-L2P"/>
+            </constraints>
+            <connections>
+                <outlet property="addBtn" destination="wFF-5T-EMW" id="whD-9k-Vcv"/>
+                <outlet property="contentLabel" destination="9ht-UJ-GcP" id="7CS-WB-DZy"/>
+                <outlet property="titleLabel" destination="eT1-YG-mb9" id="93C-l7-SVB"/>
+                <outlet property="width" destination="vpt-jW-6dd" id="T3t-8x-wbv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_recipient" width="18" height="18"/>
+        <image name="message_recipient" width="16" height="16"/>
+    </resources>
+</document>

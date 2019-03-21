@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StudentHomeworkKHLXInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课后练习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-Ys-hy7">
+                        <rect key="frame" x="20" y="13.5" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hw_khlx_right" translatesAutoresizingMaskIntoConstraints="NO" id="KqU-oH-NaO">
+                        <rect key="frame" x="87" y="16.5" width="12" height="10"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMZ-B4-6PH">
+                        <rect key="frame" x="103" y="13.5" width="8.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hw_khlx_error" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-5r-bEK">
+                        <rect key="frame" x="130" y="16.5" width="10" height="9"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnu-p4-jTo">
+                        <rect key="frame" x="144" y="13.5" width="8.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyB-Gk-d7H">
+                        <rect key="frame" x="232" y="7" width="76" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0Up-tD-aUt"/>
+                            <constraint firstAttribute="width" constant="76" id="fnB-Vj-A93"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="查看详情">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="detailBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IEn-P8-Tqj"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vnu-p4-jTo" firstAttribute="leading" secondItem="c1T-5r-bEK" secondAttribute="trailing" constant="4" id="4Qv-5B-3kF"/>
+                    <constraint firstItem="KqU-oH-NaO" firstAttribute="leading" secondItem="vZn-Ys-hy7" secondAttribute="trailing" constant="14" id="E65-Ga-ahS"/>
+                    <constraint firstItem="c1T-5r-bEK" firstAttribute="centerY" secondItem="nMZ-B4-6PH" secondAttribute="centerY" id="J7l-da-aQF"/>
+                    <constraint firstItem="c1T-5r-bEK" firstAttribute="leading" secondItem="nMZ-B4-6PH" secondAttribute="trailing" constant="18.5" id="VzF-2A-aGp"/>
+                    <constraint firstItem="NyB-Gk-d7H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vnu-p4-jTo" secondAttribute="trailing" constant="8" id="eZQ-4T-46C"/>
+                    <constraint firstItem="vnu-p4-jTo" firstAttribute="centerY" secondItem="c1T-5r-bEK" secondAttribute="centerY" id="ebJ-Vz-8xt"/>
+                    <constraint firstItem="nMZ-B4-6PH" firstAttribute="leading" secondItem="KqU-oH-NaO" secondAttribute="trailing" constant="4" id="lEV-tl-oLF"/>
+                    <constraint firstItem="KqU-oH-NaO" firstAttribute="centerY" secondItem="vZn-Ys-hy7" secondAttribute="centerY" id="mWV-jb-qM7"/>
+                    <constraint firstItem="nMZ-B4-6PH" firstAttribute="centerY" secondItem="KqU-oH-NaO" secondAttribute="centerY" id="vmf-WS-D1t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="vZn-Ys-hy7" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="20" id="Yel-RA-Thl"/>
+                <constraint firstItem="vZn-Ys-hy7" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="f8O-Z8-xTl"/>
+                <constraint firstItem="NyB-Gk-d7H" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="iIR-MN-sIS"/>
+                <constraint firstAttribute="trailing" secondItem="NyB-Gk-d7H" secondAttribute="trailing" constant="12" id="tMb-Mr-vCp"/>
+            </constraints>
+            <connections>
+                <outlet property="btn" destination="NyB-Gk-d7H" id="c0y-hf-KeS"/>
+                <outlet property="khlxLabel" destination="vZn-Ys-hy7" id="SPs-59-2ZP"/>
+                <outlet property="khlxRightLabel" destination="nMZ-B4-6PH" id="Wkg-B8-paV"/>
+                <outlet property="khlxWrongLabel" destination="vnu-p4-jTo" id="hVg-iH-vCf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hw_khlx_error" width="10" height="9"/>
+        <image name="hw_khlx_right" width="12" height="10"/>
+    </resources>
+</document>

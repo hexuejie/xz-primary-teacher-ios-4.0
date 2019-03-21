@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeworkMyBooksCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="48C-4E-mZz">
+                        <rect key="frame" x="0.0" y="-5" width="320" height="207.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TFv-Xv-jC8">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="SKp-Xd-Zkh">
+                        <rect key="frame" x="292" y="103" width="24" height="24"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqi-Pp-qxU">
+                        <rect key="frame" x="126" y="202.5" width="68" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="-29" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-105" maxY="0.0"/>
+                        <state key="normal" title="查看更多" image="home_into">
+                            <color key="titleColor" red="0.54044812917709351" green="0.56013542413711548" blue="0.60167783498764038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="lookBookSelfAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WSF-iW-Chg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="48C-4E-mZz" secondAttribute="trailing" id="5mM-tz-7CK"/>
+                    <constraint firstAttribute="bottom" secondItem="jqi-Pp-qxU" secondAttribute="bottom" constant="11" id="8me-qh-62q"/>
+                    <constraint firstItem="jqi-Pp-qxU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8sm-C7-bMJ"/>
+                    <constraint firstItem="48C-4E-mZz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BWt-Uf-1Tw"/>
+                    <constraint firstItem="SKp-Xd-Zkh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DXA-CQ-4v7"/>
+                    <constraint firstItem="jqi-Pp-qxU" firstAttribute="top" secondItem="48C-4E-mZz" secondAttribute="bottom" id="Sff-zL-zLI"/>
+                    <constraint firstAttribute="trailing" secondItem="SKp-Xd-Zkh" secondAttribute="trailing" constant="4" id="Zua-op-opV"/>
+                    <constraint firstItem="48C-4E-mZz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-5" id="esK-A8-7e0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="48C-4E-mZz" id="FjF-4y-FG0"/>
+                <outlet property="recentlyBtn" destination="jqi-Pp-qxU" id="Xrk-Lm-ooX"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="29"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_into" width="14" height="14"/>
+        <image name="homework_arrow" width="24" height="24"/>
+    </resources>
+</document>

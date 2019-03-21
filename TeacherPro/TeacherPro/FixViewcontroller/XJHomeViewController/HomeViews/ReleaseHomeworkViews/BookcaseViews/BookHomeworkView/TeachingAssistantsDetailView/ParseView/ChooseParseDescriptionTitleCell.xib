@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChooseParseDescriptionTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXQ-VW-l9G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="origin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cbw-Gu-9hn">
+                        <rect key="frame" x="10" y="16.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="655-jO-yQl"/>
+                            <constraint firstAttribute="width" constant="10" id="MsB-HN-LKj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVJ-4F-fxm">
+                        <rect key="frame" x="28" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-oc-CEd">
+                        <rect key="frame" x="219" y="10" width="31" height="22"/>
+                        <state key="normal" image="edit_change_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkW-zi-4OI">
+                        <rect key="frame" x="271" y="10" width="31" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="aqO-O0-1Hi"/>
+                        </constraints>
+                        <state key="normal" image="normal_check"/>
+                        <state key="selected" image="selected_check"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJt-lI-0Xd">
+                        <rect key="frame" x="10" y="43" width="300" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="tSj-xq-DFn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6N6-oc-CEd" firstAttribute="top" secondItem="MkW-zi-4OI" secondAttribute="top" id="0kz-vr-i29"/>
+                    <constraint firstItem="bJt-lI-0Xd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1kE-8j-ot7"/>
+                    <constraint firstItem="hXQ-VW-l9G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1tG-4k-ug1"/>
+                    <constraint firstItem="6N6-oc-CEd" firstAttribute="bottom" secondItem="MkW-zi-4OI" secondAttribute="bottom" id="2Ag-M6-69h"/>
+                    <constraint firstItem="hXQ-VW-l9G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2xS-HU-jKz"/>
+                    <constraint firstAttribute="bottom" secondItem="hXQ-VW-l9G" secondAttribute="bottom" id="3JV-gu-MDQ"/>
+                    <constraint firstAttribute="trailing" secondItem="MkW-zi-4OI" secondAttribute="trailing" constant="18" id="3dk-Yh-3Y9"/>
+                    <constraint firstAttribute="trailing" secondItem="hXQ-VW-l9G" secondAttribute="trailing" id="5be-zN-SNx"/>
+                    <constraint firstItem="cbw-Gu-9hn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7bI-0b-nx8"/>
+                    <constraint firstItem="MkW-zi-4OI" firstAttribute="leading" secondItem="6N6-oc-CEd" secondAttribute="trailing" constant="21" id="Alv-Cz-z1e"/>
+                    <constraint firstItem="6N6-oc-CEd" firstAttribute="width" secondItem="MkW-zi-4OI" secondAttribute="width" id="FBF-PO-wXp"/>
+                    <constraint firstItem="wVJ-4F-fxm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LIP-38-OrC"/>
+                    <constraint firstItem="cbw-Gu-9hn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UQX-Ko-PZ0"/>
+                    <constraint firstAttribute="bottom" secondItem="bJt-lI-0Xd" secondAttribute="bottom" id="Z0z-8y-IK9"/>
+                    <constraint firstItem="MkW-zi-4OI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cKV-yE-CMI"/>
+                    <constraint firstItem="wVJ-4F-fxm" firstAttribute="leading" secondItem="cbw-Gu-9hn" secondAttribute="trailing" constant="8" id="d9g-ui-eAh"/>
+                    <constraint firstAttribute="trailing" secondItem="bJt-lI-0Xd" secondAttribute="trailing" constant="10" id="f6b-pU-Vcu"/>
+                    <constraint firstItem="6N6-oc-CEd" firstAttribute="height" secondItem="MkW-zi-4OI" secondAttribute="height" id="o1V-Dl-One"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="hXQ-VW-l9G" id="oRm-4R-QS7"/>
+                <outlet property="chooseBtn" destination="MkW-zi-4OI" id="Epr-YY-e7f"/>
+                <outlet property="editBtn" destination="6N6-oc-CEd" id="116-yl-Wpk"/>
+                <outlet property="lineView" destination="bJt-lI-0Xd" id="Gvl-zf-u8y"/>
+                <outlet property="orangeImgV" destination="cbw-Gu-9hn" id="fPI-Sg-PLU"/>
+                <outlet property="titleLabel" destination="wVJ-4F-fxm" id="2rr-2n-xSS"/>
+            </connections>
+            <point key="canvasLocation" x="-94" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit_change_icon" width="21" height="21"/>
+        <image name="normal_check" width="22" height="22"/>
+        <image name="origin_icon" width="9" height="9"/>
+        <image name="selected_check" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HWUnfinishedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oig-BC-kiP">
+                        <rect key="frame" x="16" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="FQD-PA-ytd"/>
+                            <constraint firstAttribute="width" constant="40" id="nT4-xV-Nl8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jF-fY-fUS">
+                        <rect key="frame" x="64" y="21.5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcZ-J2-i64">
+                        <rect key="frame" x="247" y="21" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="7PN-pl-Mi4">
+                        <rect key="frame" x="296" y="24" width="8" height="12"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-Il-QPL">
+                        <rect key="frame" x="0.0" y="58.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UrC-7C-ASt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7PN-pl-Mi4" firstAttribute="leading" secondItem="bcZ-J2-i64" secondAttribute="trailing" constant="6" id="22d-bC-vFx"/>
+                    <constraint firstItem="2jF-fY-fUS" firstAttribute="leading" secondItem="Oig-BC-kiP" secondAttribute="trailing" constant="8" id="91M-Qz-dm2"/>
+                    <constraint firstItem="bcZ-J2-i64" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2jF-fY-fUS" secondAttribute="trailing" constant="10" id="Bwt-VP-oEU"/>
+                    <constraint firstAttribute="trailing" secondItem="7PN-pl-Mi4" secondAttribute="trailing" constant="16" id="EXC-U4-U1y"/>
+                    <constraint firstItem="2jF-fY-fUS" firstAttribute="centerY" secondItem="Oig-BC-kiP" secondAttribute="centerY" id="L57-Aw-Yay"/>
+                    <constraint firstAttribute="bottom" secondItem="jLa-Il-QPL" secondAttribute="bottom" id="NTT-qj-yJI"/>
+                    <constraint firstItem="Oig-BC-kiP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SIZ-YN-nfu"/>
+                    <constraint firstItem="7PN-pl-Mi4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bfT-5F-M1a"/>
+                    <constraint firstItem="jLa-Il-QPL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lcz-fC-8X3"/>
+                    <constraint firstItem="Oig-BC-kiP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vq7-yx-XdH"/>
+                    <constraint firstAttribute="trailing" secondItem="jLa-Il-QPL" secondAttribute="trailing" id="waj-lA-VL6"/>
+                    <constraint firstItem="bcZ-J2-i64" firstAttribute="centerY" secondItem="7PN-pl-Mi4" secondAttribute="centerY" id="zLk-HD-phZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImgV" destination="7PN-pl-Mi4" id="hfm-c6-wKh"/>
+                <outlet property="hwState" destination="bcZ-J2-i64" id="Mqt-is-6b8"/>
+                <outlet property="imgIcon" destination="Oig-BC-kiP" id="GTz-fJ-9SP"/>
+                <outlet property="studentName" destination="2jF-fY-fUS" id="Dij-g7-dQR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homework_arrow" width="8" height="12"/>
+    </resources>
+</document>

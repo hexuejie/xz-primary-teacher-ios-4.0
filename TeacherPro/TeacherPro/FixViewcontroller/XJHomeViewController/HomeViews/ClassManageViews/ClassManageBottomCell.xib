@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ClassManageBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvl-5n-hE5">
+                        <rect key="frame" x="14" y="0.0" width="292" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-lc-tvh">
+                                <rect key="frame" x="0.0" y="0.0" width="292" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-DH-Ymx">
+                                <rect key="frame" x="10" y="-3" width="131" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iMV-FG-uKn"/>
+                                </constraints>
+                                <state key="normal" title="转让班级">
+                                    <color key="titleColor" red="0.1790384948" green="0.54151880740000002" blue="0.99833005669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="transferAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dNg-Kr-KlB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuJ-wc-coa">
+                                <rect key="frame" x="151" y="-3" width="131" height="40"/>
+                                <state key="normal" title="解散班级"/>
+                                <connections>
+                                    <action selector="dissolutionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jz5-nH-zy1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAu-oQ-7Ge">
+                                <rect key="frame" x="109" y="-3" width="74" height="40"/>
+                                <state key="normal" title="退出班级">
+                                    <color key="titleColor" red="0.1790384948" green="0.54151880740000002" blue="0.99833005669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eixtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wP1-fq-Eb4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YuJ-wc-coa" firstAttribute="width" secondItem="KK2-DH-Ymx" secondAttribute="width" id="44R-2O-FL7"/>
+                            <constraint firstItem="KK2-DH-Ymx" firstAttribute="centerY" secondItem="yvl-5n-hE5" secondAttribute="centerY" constant="-5" id="9UD-z4-b3N"/>
+                            <constraint firstItem="ZAu-oQ-7Ge" firstAttribute="centerX" secondItem="yvl-5n-hE5" secondAttribute="centerX" id="DgA-VO-xkd"/>
+                            <constraint firstItem="i7E-lc-tvh" firstAttribute="leading" secondItem="yvl-5n-hE5" secondAttribute="leading" id="IEc-RT-QeO"/>
+                            <constraint firstAttribute="trailing" secondItem="YuJ-wc-coa" secondAttribute="trailing" constant="10" id="RNH-j4-meJ"/>
+                            <constraint firstItem="i7E-lc-tvh" firstAttribute="top" secondItem="yvl-5n-hE5" secondAttribute="top" id="TNl-24-VE8"/>
+                            <constraint firstItem="ZAu-oQ-7Ge" firstAttribute="height" secondItem="KK2-DH-Ymx" secondAttribute="height" id="bDS-BO-VNV"/>
+                            <constraint firstItem="YuJ-wc-coa" firstAttribute="leading" secondItem="KK2-DH-Ymx" secondAttribute="trailing" constant="10" id="cVt-Dz-x48"/>
+                            <constraint firstItem="ZAu-oQ-7Ge" firstAttribute="centerY" secondItem="KK2-DH-Ymx" secondAttribute="centerY" id="cX0-Ug-JSD"/>
+                            <constraint firstAttribute="bottom" secondItem="i7E-lc-tvh" secondAttribute="bottom" id="eWH-uU-OgL"/>
+                            <constraint firstItem="KK2-DH-Ymx" firstAttribute="leading" secondItem="yvl-5n-hE5" secondAttribute="leading" constant="10" id="gwR-pU-wcI"/>
+                            <constraint firstAttribute="trailing" secondItem="i7E-lc-tvh" secondAttribute="trailing" id="kXJ-0b-Erj"/>
+                            <constraint firstItem="YuJ-wc-coa" firstAttribute="bottom" secondItem="KK2-DH-Ymx" secondAttribute="bottom" id="rgc-9P-uZj"/>
+                            <constraint firstItem="YuJ-wc-coa" firstAttribute="top" secondItem="KK2-DH-Ymx" secondAttribute="top" id="uOP-QY-Paa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yvl-5n-hE5" secondAttribute="trailing" constant="14" id="CoV-Rx-3hq"/>
+                <constraint firstItem="yvl-5n-hE5" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="14" id="FJ4-7r-rOh"/>
+                <constraint firstItem="yvl-5n-hE5" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="G9y-YB-0AE"/>
+                <constraint firstAttribute="bottom" secondItem="yvl-5n-hE5" secondAttribute="bottom" id="ifQ-3H-8Ph"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgV" destination="i7E-lc-tvh" id="KH2-Tg-av4"/>
+                <outlet property="bottomBackgroundView" destination="yvl-5n-hE5" id="DDY-ka-HQL"/>
+                <outlet property="dissolutionBtn" destination="YuJ-wc-coa" id="zbI-tg-WyI"/>
+                <outlet property="eixtBtn" destination="ZAu-oQ-7Ge" id="lRY-Yo-ghy"/>
+                <outlet property="transferBtn" destination="KK2-DH-Ymx" id="Nea-nb-dnt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

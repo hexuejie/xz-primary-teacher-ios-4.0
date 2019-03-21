@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="ApplyMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="172.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="system_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="m3d-Iw-YqH">
+                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Q5v-9D-T34"/>
+                            <constraint firstAttribute="height" constant="40" id="ibp-X5-5Rd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小佳君" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18A-BA-8df">
+                        <rect key="frame" x="66" y="29.5" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roM-lJ-uop">
+                        <rect key="frame" x="265" y="29.5" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="老师邀请您加入三年级霍格沃兹学院。霍格沃兹学院。是一所." textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agl-Ba-32K">
+                        <rect key="frame" x="66" y="47" width="233" height="64.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_apply" translatesAutoresizingMaskIntoConstraints="NO" id="RsD-hM-vmd">
+                        <rect key="frame" x="66" y="111" width="233" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gCF-J0-f8O"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="325-Nq-2av">
+                        <rect key="frame" x="239" y="120" width="60" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="AKa-UF-QeC"/>
+                            <constraint firstAttribute="width" constant="60" id="wTV-9o-sOt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="同意" image="apply_message_agreed">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="agreedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q5n-Tn-7Au"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCr-9d-7AD">
+                        <rect key="frame" x="165" y="120" width="60" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="2Ma-wl-owe"/>
+                            <constraint firstAttribute="height" constant="44" id="acu-8y-blE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="拒绝" image="apply_message_Refused">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="refusedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MqH-50-tjy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="RsD-hM-vmd" firstAttribute="top" secondItem="agl-Ba-32K" secondAttribute="bottom" id="1Mz-d8-NTt"/>
+                    <constraint firstItem="325-Nq-2av" firstAttribute="leading" secondItem="QCr-9d-7AD" secondAttribute="trailing" constant="14" id="4jY-Wb-7U2"/>
+                    <constraint firstItem="325-Nq-2av" firstAttribute="top" secondItem="RsD-hM-vmd" secondAttribute="bottom" constant="8" id="95O-NP-LNv"/>
+                    <constraint firstItem="QCr-9d-7AD" firstAttribute="top" secondItem="325-Nq-2av" secondAttribute="top" id="9iv-ar-2lx"/>
+                    <constraint firstItem="m3d-Iw-YqH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="MV5-Qj-6kZ"/>
+                    <constraint firstItem="RsD-hM-vmd" firstAttribute="leading" secondItem="agl-Ba-32K" secondAttribute="leading" id="TnR-2S-MNT"/>
+                    <constraint firstItem="agl-Ba-32K" firstAttribute="leading" secondItem="18A-BA-8df" secondAttribute="leading" id="X9E-74-CN0"/>
+                    <constraint firstItem="agl-Ba-32K" firstAttribute="top" secondItem="18A-BA-8df" secondAttribute="bottom" constant="4" id="aYl-6l-Q5e"/>
+                    <constraint firstItem="roM-lJ-uop" firstAttribute="centerY" secondItem="18A-BA-8df" secondAttribute="centerY" id="cIH-op-Ms7"/>
+                    <constraint firstItem="m3d-Iw-YqH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="dJF-Hv-Gq4"/>
+                    <constraint firstItem="18A-BA-8df" firstAttribute="centerY" secondItem="m3d-Iw-YqH" secondAttribute="centerY" id="dYg-e1-65E"/>
+                    <constraint firstItem="RsD-hM-vmd" firstAttribute="trailing" secondItem="agl-Ba-32K" secondAttribute="trailing" id="jtP-G0-rhe"/>
+                    <constraint firstItem="agl-Ba-32K" firstAttribute="trailing" secondItem="roM-lJ-uop" secondAttribute="trailing" id="mbg-6V-RzB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="325-Nq-2av" secondAttribute="bottom" constant="0.5" id="nAJ-Ml-8uZ"/>
+                    <constraint firstItem="18A-BA-8df" firstAttribute="leading" secondItem="m3d-Iw-YqH" secondAttribute="trailing" constant="10" id="nCO-ae-4eE"/>
+                    <constraint firstItem="325-Nq-2av" firstAttribute="trailing" secondItem="agl-Ba-32K" secondAttribute="trailing" id="yhE-rb-ZLe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="roM-lJ-uop" secondAttribute="trailing" constant="16" id="zvs-HR-CpY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="agreedBtn" destination="325-Nq-2av" id="X9J-u7-nQK"/>
+                <outlet property="canclBtn" destination="QCr-9d-7AD" id="63f-5m-1VW"/>
+                <outlet property="imgV" destination="m3d-Iw-YqH" id="EDQ-4u-fVc"/>
+                <outlet property="lineV" destination="RsD-hM-vmd" id="Nee-tC-TAQ"/>
+                <outlet property="msgDateLabel" destination="roM-lJ-uop" id="9Jc-aj-K8X"/>
+                <outlet property="msgDetailLabel" destination="agl-Ba-32K" id="nRD-RK-diD"/>
+                <outlet property="msgTitleLabel" destination="18A-BA-8df" id="zES-Dg-c9G"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="133.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="apply_message_Refused" width="13" height="12"/>
+        <image name="apply_message_agreed" width="13" height="13"/>
+        <image name="line_apply" width="1" height="1"/>
+        <image name="system_portrait" width="40" height="40"/>
+    </resources>
+</document>

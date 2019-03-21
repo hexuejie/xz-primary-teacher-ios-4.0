@@ -1,0 +1,47 @@
+//
+//  TeacherPro.pch
+//  TeacherPro
+//
+//  Created by DCQ on 2017/5/8.
+//  Copyright © 2017年 ZNXZ. All rights reserved.
+//
+
+#ifndef TeacherPro_pch
+#define TeacherPro_pch
+
+#import <UIKit/UIKit.h>
+#import "UIImageView+AFNetworking.h"
+#import "UIButton+AFNetworking.h"
+#import "Masonry.h"
+//#import "NSObject+Extension.h"
+//#import "UIView+AutoLayout.h"
+#import "SVProgressHelper.h"
+//#import "NoticeHelp.h"
+#import "Utility.h"
+#import "UIViewController+Extension.h"
+#import "UIView+ViewController.h"
+#import "UIImage+Extension.h"
+//#import "LXStatisticsManager.h"
+
+
+
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width //屏幕宽度
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height //屏幕高度
+
+#define kCustomFit (kScreenWidth/375)
+
+#define kNavBarHeight 64 //navgationBar高度
+#define kTabbarHeight 49 //tabbar高度
+
+#define HexRGB(hexRGB) [UIColor colorWithRed:((float)((hexRGB & 0xFF0000) >> 16))/255.0 green:((float)((hexRGB & 0xFF00) >> 8))/255.0 blue:((float)(hexRGB & 0xFF))/255.0 alpha:1.0]  //0xFFFFFF
+
+#define HexThemColor HexRGB(0x3DAEFF)
+
+
+#define systemFontSize(font) [UIFont systemFontOfSize:font];
+#define systemMediumFontSize(font) [UIFont systemFontOfSize:font weight:UIFontWeightMedium];
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TeacherPro_pch */

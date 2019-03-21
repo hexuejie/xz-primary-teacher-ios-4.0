@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="ReleaseAddBookworkCell">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-Oq-4X3">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pl9-XY-vIq">
+                                <rect key="frame" x="0.0" y="10" width="462" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5D-73-JmG">
+                                <rect key="frame" x="10" y="31" width="442" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="添加书本作业" backgroundImage="add_background_image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S5D-73-JmG" secondAttribute="trailing" constant="10" id="EHz-9q-E5S"/>
+                            <constraint firstItem="S5D-73-JmG" firstAttribute="centerY" secondItem="EmI-Oq-4X3" secondAttribute="centerY" constant="1" id="NsI-83-0td"/>
+                            <constraint firstItem="pl9-XY-vIq" firstAttribute="leading" secondItem="EmI-Oq-4X3" secondAttribute="leading" id="Ob7-In-ttl"/>
+                            <constraint firstItem="pl9-XY-vIq" firstAttribute="top" secondItem="EmI-Oq-4X3" secondAttribute="top" constant="10" id="QQQ-ux-LX5"/>
+                            <constraint firstAttribute="bottom" secondItem="pl9-XY-vIq" secondAttribute="bottom" id="Zqt-2Q-xBh"/>
+                            <constraint firstItem="S5D-73-JmG" firstAttribute="leading" secondItem="EmI-Oq-4X3" secondAttribute="leading" constant="10" id="vZ4-6I-MyK"/>
+                            <constraint firstItem="pl9-XY-vIq" firstAttribute="centerX" secondItem="S5D-73-JmG" secondAttribute="centerX" id="xpR-5L-qKc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EmI-Oq-4X3" secondAttribute="bottom" id="4UX-n5-RVP"/>
+                <constraint firstAttribute="trailing" secondItem="EmI-Oq-4X3" secondAttribute="trailing" id="ItR-Vi-3Yd"/>
+                <constraint firstItem="EmI-Oq-4X3" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="gXb-jt-oBD"/>
+                <constraint firstItem="EmI-Oq-4X3" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="o7w-Rh-A6O"/>
+            </constraints>
+            <connections>
+                <outlet property="addButton" destination="S5D-73-JmG" id="V14-GP-tMi"/>
+                <outlet property="buttonCenterY" destination="NsI-83-0td" id="QDL-NS-NXG"/>
+            </connections>
+            <point key="canvasLocation" x="-434" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_background_image" width="355" height="60"/>
+    </resources>
+</document>

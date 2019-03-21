@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="WrittenParseItemConentImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6XT-Df-1mv">
+                        <rect key="frame" x="10" y="0.0" width="301" height="128"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68J-8Q-xhg">
+                        <rect key="frame" x="145.5" y="93" width="30" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="HCe-sh-U51"/>
+                            <constraint firstAttribute="width" constant="30" id="SUo-Gi-SYh"/>
+                        </constraints>
+                        <state key="normal" title=" " image="content_image_open"/>
+                        <state key="selected" image="content_image_close"/>
+                        <connections>
+                            <action selector="stateButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9ut-5e-bB1"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="68J-8Q-xhg" secondAttribute="bottom" constant="1" id="7PA-5h-WdY"/>
+                <constraint firstAttribute="trailing" secondItem="6XT-Df-1mv" secondAttribute="trailing" constant="10" id="7ci-CL-TBt"/>
+                <constraint firstItem="68J-8Q-xhg" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="GrQ-SS-ttl"/>
+                <constraint firstItem="6XT-Df-1mv" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="Nsd-6U-7XN"/>
+                <constraint firstAttribute="bottom" secondItem="6XT-Df-1mv" secondAttribute="bottom" id="VE8-p4-2Dp"/>
+                <constraint firstItem="6XT-Df-1mv" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="eJH-og-wYz"/>
+            </constraints>
+            <connections>
+                <outlet property="contentImgV" destination="6XT-Df-1mv" id="f5Y-Df-rsH"/>
+                <outlet property="stateBtn" destination="68J-8Q-xhg" id="sjK-DC-6oU"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="content_image_close" width="12" height="8"/>
+        <image name="content_image_open" width="12" height="8"/>
+    </resources>
+</document>

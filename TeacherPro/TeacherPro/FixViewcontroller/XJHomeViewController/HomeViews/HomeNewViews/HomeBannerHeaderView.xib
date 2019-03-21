@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="HomeBannerHeaderView" customClass="HomeBannerHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sec-lA-feu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIL-hO-Upt" customClass="SDCycleScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oIL-hO-Upt" firstAttribute="top" secondItem="sec-lA-feu" secondAttribute="top" id="588-HF-nWH"/>
+                        <constraint firstAttribute="bottom" secondItem="oIL-hO-Upt" secondAttribute="bottom" id="9p5-8z-6Ay"/>
+                        <constraint firstItem="oIL-hO-Upt" firstAttribute="leading" secondItem="sec-lA-feu" secondAttribute="leading" id="BOK-1V-OLb"/>
+                        <constraint firstAttribute="trailing" secondItem="oIL-hO-Upt" secondAttribute="trailing" id="Pi9-Js-qrZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sec-lA-feu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cqa-eG-zWR"/>
+                <constraint firstItem="sec-lA-feu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eEO-OZ-K8j"/>
+                <constraint firstAttribute="bottom" secondItem="sec-lA-feu" secondAttribute="bottom" id="ezI-c9-Xhz"/>
+                <constraint firstAttribute="trailing" secondItem="sec-lA-feu" secondAttribute="trailing" id="gMr-U0-3H3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerView" destination="oIL-hO-Upt" id="McN-zk-yzD"/>
+            </connections>
+        </view>
+    </objects>
+</document>

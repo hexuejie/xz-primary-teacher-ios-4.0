@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CheckHomeworkDetailStudentListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMw-Jh-pxS">
+                        <rect key="frame" x="30" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-XK-Ckt">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ylX-Qj-K4e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="hMw-Jh-pxS" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="Xy0-yo-jgK"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hMw-Jh-pxS" secondAttribute="trailing" constant="20" id="YHI-uy-bf4"/>
+                <constraint firstAttribute="bottom" secondItem="8Ag-XK-Ckt" secondAttribute="bottom" id="afm-5b-5Ew"/>
+                <constraint firstItem="hMw-Jh-pxS" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="30" id="w7d-XA-9xQ"/>
+                <constraint firstItem="8Ag-XK-Ckt" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="xYh-kB-EOP"/>
+                <constraint firstAttribute="trailing" secondItem="8Ag-XK-Ckt" secondAttribute="trailing" id="xyq-eK-Uzt"/>
+            </constraints>
+            <connections>
+                <outlet property="lineV" destination="8Ag-XK-Ckt" id="dRt-Kc-jAS"/>
+                <outlet property="nameLabel" destination="hMw-Jh-pxS" id="stc-AX-Yzq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

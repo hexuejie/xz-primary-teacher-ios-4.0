@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StudentRowOneTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vmv-Yh-Mli">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f5-OG-Wkh">
+                        <rect key="frame" x="10" y="-3" width="145" height="40"/>
+                        <color key="backgroundColor" red="0.1790384948" green="0.54151880740000002" blue="0.99833005669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6sj-8b-rVA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="发送消息"/>
+                        <connections>
+                            <action selector="leftAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IVx-48-IQE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-wV-9jA">
+                        <rect key="frame" x="165" y="-3" width="145" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.43997898050000001" blue="0.47426743649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="学生详情"/>
+                        <connections>
+                            <action selector="rightAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7Y7-4P-TSn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="dPV-wV-9jA" firstAttribute="width" secondItem="2f5-OG-Wkh" secondAttribute="width" id="8Fg-SN-VOz"/>
+                    <constraint firstItem="dPV-wV-9jA" firstAttribute="top" secondItem="2f5-OG-Wkh" secondAttribute="top" id="OW1-AL-pmu"/>
+                    <constraint firstItem="dPV-wV-9jA" firstAttribute="bottom" secondItem="2f5-OG-Wkh" secondAttribute="bottom" id="Zxi-Iw-2mk"/>
+                    <constraint firstItem="dPV-wV-9jA" firstAttribute="leading" secondItem="2f5-OG-Wkh" secondAttribute="trailing" constant="10" id="mCQ-ph-OcK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dPV-wV-9jA" secondAttribute="trailing" constant="10" id="Ln2-LU-0Xt"/>
+                <constraint firstItem="2f5-OG-Wkh" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" constant="-5" id="QNw-sG-pqY"/>
+                <constraint firstItem="vmv-Yh-Mli" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="R44-Af-lD1"/>
+                <constraint firstAttribute="bottom" secondItem="vmv-Yh-Mli" secondAttribute="bottom" id="Yft-gb-bsC"/>
+                <constraint firstAttribute="trailing" secondItem="vmv-Yh-Mli" secondAttribute="trailing" id="apw-uq-vPx"/>
+                <constraint firstItem="2f5-OG-Wkh" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="mFm-gt-82O"/>
+                <constraint firstItem="vmv-Yh-Mli" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="mso-E0-CW4"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgV" destination="vmv-Yh-Mli" id="0By-Ia-wgd"/>
+                <outlet property="leftBtn" destination="2f5-OG-Wkh" id="AhS-Md-m0x"/>
+                <outlet property="rightBtn" destination="dPV-wV-9jA" id="lxk-fw-2j9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

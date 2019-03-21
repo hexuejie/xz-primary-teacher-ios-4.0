@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CheckDetialCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gEh-Di-H9I">
+                        <rect key="frame" x="60" y="0.0" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="X8H-tZ-lgv"/>
+                            <constraint firstAttribute="height" constant="54" id="epn-jt-Xsi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q07-fn-J90">
+                        <rect key="frame" x="70.5" y="60" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.32064762711524963" green="0.35522711277008057" blue="0.40049362182617188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medal_checkSpeed3" translatesAutoresizingMaskIntoConstraints="NO" id="0ne-3y-8Dh">
+                        <rect key="frame" x="100" y="40" width="14" height="14"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medal_checkGood2" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-9K-AmE">
+                        <rect key="frame" x="94" y="40" width="14" height="14"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medal_checkUp1" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-2O-hlc">
+                        <rect key="frame" x="88" y="40" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="QRI-4a-gIg"/>
+                            <constraint firstAttribute="height" constant="14" id="k2n-QT-xBQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0ne-3y-8Dh" firstAttribute="width" secondItem="gz0-2O-hlc" secondAttribute="width" id="1wh-N8-0ln"/>
+                <constraint firstItem="eXm-9K-AmE" firstAttribute="height" secondItem="gz0-2O-hlc" secondAttribute="height" id="54u-Rq-MnN"/>
+                <constraint firstItem="eXm-9K-AmE" firstAttribute="trailing" secondItem="gz0-2O-hlc" secondAttribute="trailing" constant="6" id="Ear-6i-kLe"/>
+                <constraint firstItem="eXm-9K-AmE" firstAttribute="centerY" secondItem="gz0-2O-hlc" secondAttribute="centerY" id="Hf4-cW-gTE"/>
+                <constraint firstItem="gEh-Di-H9I" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Hko-yH-dPa"/>
+                <constraint firstItem="gEh-Di-H9I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NP4-f3-ft3"/>
+                <constraint firstItem="gEh-Di-H9I" firstAttribute="bottom" secondItem="0ne-3y-8Dh" secondAttribute="bottom" id="O4N-02-E1T"/>
+                <constraint firstItem="0ne-3y-8Dh" firstAttribute="height" secondItem="gz0-2O-hlc" secondAttribute="height" id="OFv-MG-yek"/>
+                <constraint firstItem="eXm-9K-AmE" firstAttribute="width" secondItem="gz0-2O-hlc" secondAttribute="width" id="iNK-T6-8XV"/>
+                <constraint firstItem="gEh-Di-H9I" firstAttribute="trailing" secondItem="0ne-3y-8Dh" secondAttribute="trailing" id="tjm-Rs-Tbf"/>
+                <constraint firstItem="0ne-3y-8Dh" firstAttribute="trailing" secondItem="eXm-9K-AmE" secondAttribute="trailing" constant="6" id="uZ8-xU-VNg"/>
+                <constraint firstItem="gz0-2O-hlc" firstAttribute="centerY" secondItem="0ne-3y-8Dh" secondAttribute="centerY" id="vFU-dL-GQ1"/>
+                <constraint firstItem="q07-fn-J90" firstAttribute="centerX" secondItem="gEh-Di-H9I" secondAttribute="centerX" id="vpF-Le-5NY"/>
+                <constraint firstItem="q07-fn-J90" firstAttribute="top" secondItem="gEh-Di-H9I" secondAttribute="bottom" constant="6" id="zgE-b1-9VM"/>
+            </constraints>
+            <size key="customSize" width="174" height="136"/>
+            <connections>
+                <outlet property="CheckUpImage" destination="gz0-2O-hlc" id="aZA-ux-aMi"/>
+                <outlet property="checkGoodImage" destination="eXm-9K-AmE" id="1r0-n6-NEe"/>
+                <outlet property="checkSpeedImage" destination="0ne-3y-8Dh" id="TQz-ut-Df1"/>
+                <outlet property="headerImage" destination="gEh-Di-H9I" id="Cg0-Lr-gc9"/>
+                <outlet property="nameLabel" destination="q07-fn-J90" id="HFc-wh-agQ"/>
+            </connections>
+            <point key="canvasLocation" x="-1110" y="-5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="medal_checkGood2" width="14" height="14"/>
+        <image name="medal_checkSpeed3" width="14" height="14"/>
+        <image name="medal_checkUp1" width="14" height="14"/>
+    </resources>
+</document>

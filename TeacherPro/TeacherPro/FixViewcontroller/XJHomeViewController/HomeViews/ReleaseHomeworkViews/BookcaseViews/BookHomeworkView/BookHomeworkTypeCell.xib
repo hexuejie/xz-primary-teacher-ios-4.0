@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BookHomeworkTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dLv-dw-Keo">
+                        <rect key="frame" x="14" y="9" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="nhi-AZ-3SF"/>
+                            <constraint firstAttribute="width" constant="26" id="q9h-Uk-Zff"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-bL-eQc">
+                        <rect key="frame" x="50" y="12" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.32156862745098042" green="0.35686274509803922" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kbK-Mv-uo4">
+                        <rect key="frame" x="222" y="10" width="80" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="1VT-fF-XZa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <state key="normal" title="已布置" image="preBookGo_into">
+                            <color key="titleColor" red="0.32156862745098042" green="0.35686274509803922" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="preBookGo_into"/>
+                        <connections>
+                            <action selector="rightButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oWd-Ir-jd9"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework_selected" translatesAutoresizingMaskIntoConstraints="NO" id="Wh5-es-mEu">
+                        <rect key="frame" x="278" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="IDh-rG-kij"/>
+                            <constraint firstAttribute="height" constant="20" id="Xmi-Fk-3vJ"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ui5-4E-gwa">
+                        <rect key="frame" x="0.0" y="43.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="F0g-2K-2Ju"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kbK-Mv-uo4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gm6-y3-TDd"/>
+                    <constraint firstItem="Yud-bL-eQc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H2g-2f-5rS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kbK-Mv-uo4" secondAttribute="trailing" constant="2" id="ZEC-Kk-hul"/>
+                    <constraint firstItem="Yud-bL-eQc" firstAttribute="leading" secondItem="dLv-dw-Keo" secondAttribute="trailing" constant="10" id="dkn-e6-edN"/>
+                    <constraint firstItem="dLv-dw-Keo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gCn-Xe-So0"/>
+                    <constraint firstItem="kbK-Mv-uo4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yud-bL-eQc" secondAttribute="trailing" constant="10" id="zCL-SO-XDe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ui5-4E-gwa" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="5sa-ey-8xi"/>
+                <constraint firstAttribute="bottom" secondItem="Ui5-4E-gwa" secondAttribute="bottom" id="7yW-ed-TWI"/>
+                <constraint firstItem="Wh5-es-mEu" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="ZzD-QI-mkb"/>
+                <constraint firstAttribute="trailing" secondItem="Wh5-es-mEu" secondAttribute="trailing" constant="22" id="ajh-Yx-xyV"/>
+                <constraint firstItem="dLv-dw-Keo" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="14" id="auB-l8-9Ox"/>
+                <constraint firstAttribute="trailing" secondItem="Ui5-4E-gwa" secondAttribute="trailing" id="d8Z-Gg-gtT"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLineV" destination="Ui5-4E-gwa" id="0uC-GL-8Bj"/>
+                <outlet property="iconImgV" destination="dLv-dw-Keo" id="lF1-Xv-0fd"/>
+                <outlet property="rightBtn" destination="kbK-Mv-uo4" id="qMR-t4-WUN"/>
+                <outlet property="selectedImgV" destination="Wh5-es-mEu" id="xAV-uE-62P"/>
+                <outlet property="titleLabel" destination="Yud-bL-eQc" id="Sml-1Y-1v0"/>
+            </connections>
+            <point key="canvasLocation" x="-280" y="125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homework_selected" width="24" height="24"/>
+        <image name="preBookGo_into" width="24" height="24"/>
+    </resources>
+</document>
